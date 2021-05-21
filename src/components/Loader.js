@@ -34,7 +34,7 @@ const Loader = () => {
 	const [animation, cycleAnimation] = useCycle('animationOne', 'animationTwo');
 	return (
 		<Fragment>
-			<motion.div className='loader' variants={loaderVariants} animate='animationOne' animate={animation}></motion.div>
+			<motion.div className='loader' variants={loaderVariants} animate={animation}></motion.div>
 			<div onClick={() => cycleAnimation()}>Change Loader</div>
 		</Fragment>
 	);
